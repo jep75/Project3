@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>Chermernder</string>
+	<key>Pokedex Number</key>
+	<integer>4</integer>
+	<key>Date Caught</key>
+	<date>2018-02-26T20:26:08Z</date>
+	<key>Shiny</key>
+	<false/>
+	<key>HP</key>
+	<integer>19</integer>
+	<key>Attack</key>
+	<integer>10</integer>
+	<key>Defense</key>
+	<integer>9</integer>
+	<key>Special Attack</key>
+	<integer>11</integer>
+	<key>Special Defense </key>
+	<integer>10</integer>
+	<key>Speed</key>
+	<integer>11</integer>
+</dict>
+</plist>
