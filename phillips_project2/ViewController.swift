@@ -10,41 +10,50 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var pokeName: UITextField!
+    @IBOutlet weak var pokedex: UITextField!
+    @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var Shiny: UITextField!
+    @IBOutlet weak var date: UITextField!
+    @IBOutlet weak var enter: UIButton!
+    
+    let images = ["cher1", "cher2", "cher3"]
+    var currentImage = 1
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if event?.subtype == UIEventSubtype.motionShake{
+            imageView.image = UIImage(named: images[currentImage] + ".png")
+        }
+        if(currentImage == images.count-1){
+            currentImage = 0
+        }
+        else{
+            currentImage += 1
+        }
+    }
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        guard let classURL = Bundle.main.url(forResource: "stats", withExtension:"plist") else {
-            print("Error: Unable to form path")
-            return
+        if let path = Bundle.main.path(forResource: "stats", ofType: "plist") {
+            let dictRoot = NSDictionary(contentsOfFile: path)
+            if let dict = dictRoot {
+                let val1 = dict["Name"]
+                let val2 = dict["Pokedex Number"]
+                let val3 = dict["Age"]
+                let val4 = dict["Shiny"]
+                let val5 = dict["Date Caught"]
+                
+                pokeName.text = "\(val1!)"
+                pokedex.text = "\(val2!)"
+                age.text = "\(val3!)"
+                Shiny.text = "\(val4!)"
+                date.text = "\(val5!)"
+            }
         }
-        
-        // data in resource file
-        // Note: Using try requires catch
-        // Note: Using try? converts thrown error to nil
-        guard let data = try? Data(contentsOf:classURL) else {
-            print("Error: Invalid Data")
-            return
-        }
-        
-        // convert the class data plist to a class dictionary
-        // Note: Using as? creates [String:String]?
-        // Note: Using as! creates [String:String]
-        guard let classData = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String:String] else {
-            print("Error: Bad data format for property list")
-            return
-        }
-        
-        // access class name
-        // Note: If used as? above, then classData?["Name"]
-        // Note: If used as! above, then classData["Name"]
-        guard let className = classData?["Name"] else {
-            print("Error: Field 'Name' doest not exist in the dictionary")
-            return
-        }
-        
-        // use the classname
-        print(className)
+       
     }
 }
-

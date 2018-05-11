@@ -10,17 +10,7 @@
 	<date>2018-02-26T20:26:08Z</date>
 	<key>Shiny</key>
 	<false/>
-	<key>HP</key>
-	<integer>19</integer>
-	<key>Attack</key>
-	<integer>10</integer>
-	<key>Defense</key>
-	<integer>9</integer>
-	<key>Special Attack</key>
-	<integer>11</integer>
-	<key>Special Defense </key>
-	<integer>10</integer>
-	<key>Speed</key>
-	<integer>11</integer>
+	<key>Age</key>
+	<integer>2</integer>
 </dict>
 </plist>

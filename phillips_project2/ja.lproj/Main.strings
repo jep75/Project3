@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "Pokedex #"; ObjectID = "89G-in-ejk"; */
+"89G-in-ejk.text" = "Pokedex #";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "8Xt-S0-EUo"; */
+"8Xt-S0-EUo.text" = "Age";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "IQ2-R6-m6O"; */
+"IQ2-R6-m6O.text" = "Name";
+
+/* Class = "UILabel"; text = "Caught"; ObjectID = "Oef-9n-LpS"; */
+"Oef-9n-LpS.text" = "Caught";
+
+/* Class = "UIButton"; normalTitle = "Map"; ObjectID = "Uud-Pf-oQx"; */
+"Uud-Pf-oQx.normalTitle" = "Map";
+
+/* Class = "UILabel"; text = "Level"; ObjectID = "XVq-I9-uu6"; */
+"XVq-I9-uu6.text" = "Level";
+
+/* Class = "UIButton"; normalTitle = "Enter"; ObjectID = "Yjc-19-ay1"; */
+"Yjc-19-ay1.normalTitle" = "Enter";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "ZAF-hP-Aqa"; */
+"ZAF-hP-Aqa.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Share"; ObjectID = "bb6-Rw-jp7"; */
+"bb6-Rw-jp7.normalTitle" = "Share";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "kBl-vw-iJ0"; */
+"kBl-vw-iJ0.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "pYy-4a-oRn"; */
+"pYy-4a-oRn.text" = "Age";
+
+/* Class = "UILabel"; text = "Shiny"; ObjectID = "psF-GX-Vw0"; */
+"psF-GX-Vw0.text" = "Shiny";
+
+/* Class = "UIButton"; normalTitle = "Enter"; ObjectID = "sRG-yA-BGl"; */
+"sRG-yA-BGl.normalTitle" = "Enter";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "yAi-oB-uzx"; */
+"yAi-oB-uzx.text" = "Name";
